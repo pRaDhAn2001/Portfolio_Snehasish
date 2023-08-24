@@ -19,7 +19,7 @@ body
 {
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 *
 {
@@ -397,11 +397,15 @@ h3.profession
     color: var(--skin-color);
     z-index: 1;
     overflow: hidden;
+    box-shadow: 0 0 20px transparent;
+    cursor: pointer;
     transition: .5s ease;
 }
 .home .home-sci a:hover
 {
     color: var(--bg-black-900);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--skin-color);
 }
 .home .home-sci a::before
 {
@@ -478,7 +482,7 @@ h3.profession
 }
 .about .about-content .personal-info .buttons .btn
 {
-    margin-right: 18px;
+    margin-right: 15px;
     margin-top: 10px;
     position: relative;
     display: inline-flex;
@@ -771,6 +775,7 @@ h3.profession
     font-weight: 600;
     margin-bottom: 15px;
     color: #c8c8c8;
+    font-display:inherit;
 }
 .layer p
 {
@@ -890,7 +895,7 @@ h3.profession
     padding: 0 50px;
     cursor: pointer;
 }
-
+/*
 .footer
 {
     display: flex;
@@ -922,7 +927,7 @@ h3.profession
 {
     font-size: 16px;
     color: var(--text-black-900);
-}
+} */
 
 @media (max-width:1199px)
 {
@@ -982,13 +987,22 @@ h3.profession
     {
         display: none;
     }
-    body.show-footer .footer
+    .home .home-sci
     {
-        display: block;
+        margin-bottom: 20px;
     }
-    .footer 
-    {
-        display: none;
+    .portfolio .portfolio-item-inner .layer h2 {
+        font-size: 15px; 
+    }
+    
+    .portfolio .portfolio-item-inner .layer p {
+        font-size: 10px; 
+    }
+    .portfolio .portfolio-item-inner .layer i {
+        font-size: 17px; 
+        height: 50px;
+        width: 50px;
+        margin-top: 15px;
     }
 }
 @media (max-width:767px)
@@ -1003,6 +1017,18 @@ h3.profession
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .portfolio .portfolio-item-inner .layer h2 {
+        font-size: 14px; 
+    }    
+    .portfolio .portfolio-item-inner .layer p {
+        font-size: 10px; 
+    }
+    .portfolio .portfolio-item-inner .layer i {
+        font-size: 14px; 
+        height: 40px;
+        width: 40px;
+        margin-top: 10px;
     }
 }
 
